@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mainnn {
+  background-image: url(./Images/img02.jpg);
+  background-position: center;
+  background-size: cover;
+  height: max-content;
+}
+
+.qoute {
+  animation: show 2s linear infinite;
+}
+
+@keyframes show {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.3;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.child_slider {
+  animation: anime 20s linear infinite;
+}
+
+@keyframes anime {
+  0% {
+    left: 0%;
+  }
+
+  100% {
+    left: -149%;
+  }
+}
+
+
+.card {
+  border: 3px solid transparent;
+  border-radius: 20px;
+  background-image: linear-gradient(black, black),
+    linear-gradient(120deg, #e146a0, #813ae8, #e146a0);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  animation: borderAnimation 5s linear infinite;
+}
+
+@keyframes borderAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+
+@media (max-width: 400px) {
+  .btn-responsive {
+    flex-direction: column;
+    width: 100%;
+  }
+}
